@@ -23,11 +23,10 @@ const userSchema = new mongoose.Schema({
     password:{
         type: String,
         required: true,
-        min: 6
     },
     jobProfile:{
         type: String,
-        required: true,
+        required: true, 
     },
     companyName:{
         type: String,

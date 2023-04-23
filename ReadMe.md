@@ -15,7 +15,7 @@ git pull: Fetches changes from a remote repository and merges them with the loca
 git status: Shows the current status of the repository, including which files are modified and which are staged.
 
 git log: Shows the commit history of the repository.
-git log --all --decorate --oneline --graph: Shows the commit history of the repository.
+git log --all --decorate --oneline --graph    : Shows the commit history of the repository.
 
 git branch: Lists all branches in the repository and shows which branch is currently checked out.
 
