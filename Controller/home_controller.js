@@ -9,3 +9,9 @@ module.exports.signIn = function(req,res){
         title: "Sign In"
     })
 }
+
+module.exports.signUp = function(req,res){
+    return res.render("signUp",{
+        title: "Sign Up"
+    })
+}
