@@ -1,6 +1,14 @@
 const express = require('express');
 const App = express();
 const port = 8001;
+const expressLayouts = require('express-ejs-layouts');
+
+App.use(express.static("./Assets"))
+
+// set the view engine to ejs
+App.set('view engine', 'ejs');
+
+App.use(expressLayouts);
 
 App.use("/",require('./Routes/index'))
 
