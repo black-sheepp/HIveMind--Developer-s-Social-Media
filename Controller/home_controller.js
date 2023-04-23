@@ -1,5 +1,11 @@
-module.exports.home = async function(req,res){
+module.exports.home = function(req,res){
     return res.render("home",{
-        title: "HiveMind"
+        title: "Welcome to HiveMind"
+    })
+}
+
+module.exports.signIn = function(req,res){
+    return res.render("signIn",{
+        title: "Sign In"
     })
 }
