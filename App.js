@@ -10,6 +10,7 @@ const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const passport = require("passport");
 const passportLocal = require("./Config/passport-local-stratergy");
+const mongoStore = require('connect-mongo')
 
 App.use(express.static("./Assets"));
 App.use(bodyParser.urlencoded());
@@ -27,6 +28,11 @@ App.use(
     cookie: {
       maxAge: 1000 * 60 * 1000,
     },
+    store: new mongoStore({
+      mongoUrl: 'mongodb://127.0.0.1:27017/HiveMind_Dev',
+      touchAfter: 24 * 3600 , // time period in seconds
+      autoRemove: 'disabled',
+    })
   })
 );
 
