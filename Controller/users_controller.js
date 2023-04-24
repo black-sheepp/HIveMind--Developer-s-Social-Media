@@ -24,3 +24,17 @@ module.exports.createUser = async function(req,res){
         console.log('error creating user',err)
     }
 }
+
+module.exports.createSession = function(req,res){
+    return res.redirect('/user/dashboard');
+}
+
+module.exports.dashboard = function(req,res){
+    return res.render("dashboard",{
+        title: "Dashboard"
+    })
+}
+
+module.exports.profile = function(req,res){
+    return res.send("<h1>Profile<h1>")
+}
