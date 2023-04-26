@@ -3,23 +3,23 @@
     flex-direction: column;
     gap: 10px;
     background-color: white;
-    padding: 0 10px;
+    padding: 0 20px;
+    border: 2px solid #171717;
     border-radius: 15px;
     transition: .4s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
-    width: 450px;
+    width: 610px;
   }
   
   .form1:hover {
     transform: translateX(-0.5em) translateY(-0.5em);
     border: 1px solid #171717;
-    box-shadow: 10px 10px 0px #666666;
+    box-shadow: 10px 10px 0px #171717;
   }
   
   .heading {
     text-align: left;
     padding-top: 5px;
-    padding-left: 20px;
     color: #171717;
     padding-bottom: 0;
     font-weight: bold;
@@ -33,20 +33,14 @@
     outline: none;
     padding: 0.7em;
     transition: .4s ease-in-out;
-  }
-  
-  .input:hover {
-    box-shadow: 6px 6px 0px #171717,
-               -3px -3px 10px #ffffff;
+    resize: none;
   }
   
   .input:focus {
     background: white;
-    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
   }
   
   .form1 .btn1 {
-    margin-right: 20px;
     margin-bottom: 15px;
     align-self:flex-end;
     padding: 0.7em;

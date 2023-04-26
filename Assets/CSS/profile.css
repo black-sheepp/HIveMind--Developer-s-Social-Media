@@ -1,0 +1,105 @@
+.profile-container{
+    width: 70%;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 4px solid #171717;
+    display: flex;
+}
+
+.dp-container{
+    margin: 40px;
+}
+
+.card {
+  width: 26em;
+  height: 38em;
+  background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.card .img {
+  width: 10em;
+  height: 10em;
+  /* background: white; */
+  border-radius: 50%;
+  border: 4px solid gold;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card button:hover {
+  background: lime;
+  color: #061a39;
+  cursor: pointer;
+}
+
+.info-container{
+    margin-top: 40px;
+}
+
+.list-item-info{
+  display: flex;
+}
+
+.list-item-info .field-info{
+  width: 180px;
+  color: #061a39;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.list-item-info .value-info{
+  font-size: 17px;
+}

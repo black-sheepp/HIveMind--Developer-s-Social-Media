@@ -36,5 +36,17 @@ module.exports.dashboard = function(req,res){
 }
 
 module.exports.profile = function(req,res){
-    return res.send("<h1>Profile<h1>")
+    return res.render("profile",{
+        title: "Profile"
+    })
+}
+
+module.exports.signOut = function(req,res){
+    // req.logout();
+  req.logout(function (err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect("/");
+  });
 }

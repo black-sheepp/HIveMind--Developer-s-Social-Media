@@ -4,8 +4,15 @@
     display: flex;
 }
 .dash-msg{
-
+    max-width: 60%;
+}
+.dash-msg p{
+    padding-top: 15px;
+    font-size: 20px;
 }
 .friend-list-container{
 
+}
+.post-show{
+    margin: auto;
 }
