@@ -1,4 +1,5 @@
 const User = require("../Models/userSchema")
+const Post = require("../Models/postSchema")
 
 module.exports.createUser = async function(req,res){
     try{
@@ -29,10 +30,14 @@ module.exports.createSession = function(req,res){
     return res.redirect('/user/dashboard');
 }
 
-module.exports.dashboard = function(req,res){
-    return res.render("dashboard",{
-        title: "Dashboard"
+module.exports.dashboard = async function(req,res){
+    let post = await Post.find({}).sort({createdAt:-1}).populate('user')
+    if(post){
+        return res.render("dashboard",{
+        title: "Dashboard",
+        post: post
     })
+    }
 }
 
 module.exports.profile = function(req,res){

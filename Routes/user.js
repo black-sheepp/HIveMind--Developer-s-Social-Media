@@ -12,4 +12,5 @@ router.post('/create-session', passport.authenticate(
 router.get('/dashboard',passport.checkAuthentication,usersController.dashboard)
 router.get('/profile',passport.checkAuthentication,usersController.profile)
 router.get('/sign-out',usersController.signOut)
+
 module.exports = router;
